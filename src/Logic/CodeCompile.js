@@ -6,7 +6,7 @@ export default function Compile() {
   let js = document.getElementById('js');
   let code = document.getElementById('code').contentWindow.document;
   
-  // Write the code in the iframe
+  // Write the code to the iframe
   code.open();
   code.writeln(
       `${html.value}<style>${css.value}</style><script>${js.value}</script>`
